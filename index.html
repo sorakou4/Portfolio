@@ -32,7 +32,7 @@ body {
     padding: 0.75rem 5vw;
     background: rgba(0, 0, 0, 0.9);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 165, 0, 0.25);
+    border-bottom: 1px solid rgba(0, 60, 255, 0.25);
 }
 
 .logo {
@@ -44,7 +44,7 @@ body {
 }
 
 .logo span {
-    color: #ff9f2f;
+    color: #2fc1ff;
 }
 
 /* Navigation */
@@ -69,19 +69,19 @@ body {
     bottom: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(90deg, #ff9f2f, #ff5c00);
+    background: linear-gradient(90deg, #2f9eff, #006eff);
     transition: width 0.25s ease-out;
     transform-origin: left;
 }
 
 .navigation-principale a:hover {
     color: #ffffff;
-    text-shadow: 0 0 8px rgba(255, 159, 47, 0.6);
+    text-shadow: 0 0 8px rgba(47, 120, 255, 0.6);
 }
 
 .navigation-principale a:hover::after {
     width: 100%;
-    box-shadow: 0 0 10px rgba(255, 159, 47, 0.8);
+    box-shadow: 0 0 10px rgba(47, 151, 255, 0.8);
 }
 
 .navigation-principale a::before {
@@ -89,7 +89,7 @@ body {
     position: absolute;
     inset: -2px;
     border-radius: 4px;
-    background: radial-gradient(circle, rgba(255, 159, 47, 0.1), transparent);
+    background: radial-gradient(circle, rgba(47, 71, 255, 0.1), transparent);
     opacity: 0;
     transition: opacity 0.3s ease-out;
 }
@@ -109,7 +109,7 @@ body {
 .menu-burger span {
     width: 28px;
     height: 3px;
-    background: orange;
+    background: rgb(0, 110, 255);
     transition: 0.3s;
 }
 
@@ -134,7 +134,7 @@ body {
     display: flex;
     align-items: center;
     padding: 4rem 5vw 3rem;
-    background: radial-gradient(circle at top left, #1a1205 0%, #050505 40%, #000000 100%);
+    background: radial-gradient(circle at top left, #050e1a 0%, #050505 40%, #000000 100%);
 }
 
 .contenu-accueil {
@@ -145,7 +145,7 @@ body {
     text-transform: uppercase;
     font-size: 0.75rem;
     letter-spacing: 0.18em;
-    color: #ff9f2f;
+    color: #2f78ff;
     margin-bottom: 0.8rem;
 }
 
@@ -196,7 +196,7 @@ body {
     bottom: -0.4rem;
     width: 50%;
     height: 2px;
-    background: linear-gradient(90deg, #ff9f2f, transparent);
+    background: linear-gradient(90deg, #2f71ff, transparent);
 }
 
 .section p {
@@ -224,7 +224,7 @@ body {
 
 .carte {
     background: radial-gradient(circle at top left, #141414 0%, #050505 70%);
-    border: 1px solid rgba(255, 159, 47, 0.25);
+    border: 1px solid rgba(47, 57, 255, 0.25);
     border-radius: 0.8rem;
     padding: 1.4rem 1.5rem;
     box-shadow: 0 14px 40px rgba(0, 0, 0, 0.7);
@@ -234,7 +234,7 @@ body {
 .carte:hover {
     transform: translateY(-4px);
     box-shadow: 0 18px 45px rgba(0, 0, 0, 0.9);
-    border-color: rgba(255, 159, 47, 0.6);
+    border-color: rgba(47, 179, 255, 0.6);
 }
 
 .carte h3 {
@@ -254,7 +254,7 @@ body {
 
 .carte li::before {
     content: "• ";
-    color: #ff9f2f;
+    color: #2f9aff;
 }
 
 /* FRISE CHRONOLOGIQUE */
@@ -264,7 +264,7 @@ body {
     position: relative;
     margin: 2rem 0 1rem;
     padding-left: 1.2rem;
-    border-left: 1px solid rgba(255, 159, 47, 0.4);
+    border-left: 1px solid rgba(47, 99, 255, 0.4);
 }
 
 .element-frise {
@@ -281,15 +281,15 @@ body {
     width: 0.8rem;
     height: 0.8rem;
     border-radius: 50%;
-    background: radial-gradient(circle, #ff9f2f 0%, #ff5c00 60%, #000 100%);
-    box-shadow: 0 0 10px rgba(255, 159, 47, 0.6);
+    background: radial-gradient(circle, #2f9aff 0%, #0d00ff 60%, #000 100%);
+    box-shadow: 0 0 10px rgba(47, 113, 255, 0.6);
 }
 
 .date-frise {
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    color: #ffb35e;
+    color: #5e81ff;
     margin-bottom: 0.2rem;
 }
 
@@ -311,24 +311,24 @@ body {
 }
 
 .bouton.primaire {
-    background: linear-gradient(135deg, #ff9f2f, #ff5c00);
+    background: linear-gradient(135deg, #2f8dff, #001eff);
     color: #000;
-    box-shadow: 0 10px 25px rgba(255, 128, 0, 0.35);
+    box-shadow: 0 10px 25px rgba(0, 42, 255, 0.35);
 }
 
 .bouton.primaire:hover {
     transform: translateY(-1px);
-    box-shadow: 0 16px 30px rgba(255, 128, 0, 0.55);
+    box-shadow: 0 16px 30px rgba(0, 149, 255, 0.55);
 }
 
 .bouton.secondaire {
     background: transparent;
-    color: #ffb35e;
-    border: 1px solid rgba(255, 159, 47, 0.6);
+    color: #5ea1ff;
+    border: 1px solid rgba(47, 234, 255, 0.6);
 }
 
 .bouton.secondaire:hover {
-    background: rgba(255, 159, 47, 0.08);
+    background: rgba(47, 182, 255, 0.08);
 }
 
 .bouton.petit {
@@ -341,7 +341,7 @@ body {
 
 
 .projet {
-    border-left: 3px solid rgba(255, 159, 47, 0.7);
+    border-left: 3px solid rgba(47, 255, 255, 0.7);
 }
 
 .liens-projet {
@@ -352,7 +352,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    color: #ff9f2f;
+    color: rgb(213,0 255);
     text-decoration: none;
     font-weight: 600;
     font-size: 0.9rem;
@@ -360,7 +360,7 @@ body {
 }
 
 .lien-projet:hover {
-    color: #ffb35e;
+    color: #5ebcff;
 }
 
 .lien-projet i {
@@ -386,7 +386,7 @@ body {
     padding: 1.5rem 5vw 2rem;
     font-size: 0.8rem;
     color: #888;
-    border-top: 1px solid rgba(255, 159, 47, 0.2);
+    border-top: 1px solid rgba(47, 64, 255, 0.2);
     background: #020202;
 }
 
@@ -409,8 +409,8 @@ body {
         width: 200px;
         padding: 20px;
         display: none;
-        border-left: 2px solid orange;
-        border-bottom: 2px solid orange;
+        border-left: 2px solid rgb(213,0 255);
+        border-bottom: 2px solid rgb(213,0 255);
         
     }
 
