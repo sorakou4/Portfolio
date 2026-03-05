@@ -416,10 +416,6 @@ body {
     background: #020202;
 }
 
-.pied-de-page.cache {
-    transform: translateY(100%);
-}
-
 
 /* RESPONSIVE */
 
@@ -466,5 +462,6 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 
