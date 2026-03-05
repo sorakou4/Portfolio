@@ -292,25 +292,9 @@
                 document.body.classList.remove('no-scroll');
             });
         });
-        let lastScroll = 0;
-        let timer;
-        const footer = document.querySelector('.pied-de-page');
-        window.addEventListener('scroll', () => {
-            const currentScroll = window.scrollY;
-                    if (currentScroll > lastScroll) {
-                footer.classList.add('cache');
-            } 
-            else {
-                footer.classList.remove('cache');
-            }
-            lastScroll = currentScroll;
-            clearTimeout(timer);
-            timer = setTimeout(() => {
-                footer.classList.add('cache');
-            }, 2500);
-        });
     </script>
 
 </body>
 </html>
+
 
