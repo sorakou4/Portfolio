@@ -267,6 +267,12 @@ body {
     gap: 10px;
 }
 
+.carte-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .btn-certif-image {
     background: #5e81ff;
     border: none;
@@ -283,11 +289,12 @@ body {
 }
 
 .certif-image {
-    width: 100%;
-    margin-top: 15px;
-    border-radius: 10px;
     display: none;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
 }
+
 
 /* GRILLES */
 
@@ -477,16 +484,6 @@ body {
     border: 1px solid #5e81ff;
     padding: 3px 8px;
     border-radius: 6px;
-}
-
-
-
-/* DEUX COLONNES */
-
-.deux-colonnes {
-    display: grid;
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-    gap: 2rem;
 }
 
 /* CONTACT */

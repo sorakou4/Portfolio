@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio – Daniel</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="WEBSITE/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -56,7 +56,6 @@
         </section>
 
 
-
     <main>
         <section id="introduction" class="section">
             <div class="contenu-section">
@@ -70,9 +69,9 @@
                     <div class="carte">
                         <h3><i class="fa-solid fa-user"> </i> Me connaître</h3>
                         <p>
-                            Étudiant en BUT Informatique, passionné par le développement et les systèmes.
-                            J’aime comprendre comment les choses fonctionnent, apprendre en expérimentant et créer des projets
-                            qui ont du sens.
+                        Étudiant en BUT Informatique, passionné par le développement, les systèmes et la cybersécurité.
+                        J’aime comprendre comment les choses fonctionnent, apprendre en expérimentant et créer des projets
+                        qui ont du sens.
                         </p>
 
                     </div>
@@ -107,6 +106,14 @@
                 <div class="contenu-frise">
                     <h3>STI2D - SIN</h3>
                     <p>Élève au lycée Gaston Bachelard</p>
+                </div>
+            </div>
+
+            <div class="element-frise" onclick="toggleFrise(this)">
+                <div class="date-frise">Novembre 2022</div>
+                <div class="contenu-frise">
+                    <h3>Stage d'observation</h3>
+                    <p>Communauté d'Agglomération Paris – Vallée de la Marne</p>
                 </div>
             </div>
 
@@ -157,22 +164,31 @@
                         <div class="grille grille-3">
 
                             <div class="carte">
-                                <button class="btn-certif-image">
-                                <i class="fa fa-image"></i>
-                                </button>
-                                <h3><i class="fa-solid fa-certificate"></i> PIX</h3>
-                                <p>Certification des compétences numériques.</p>
-                                <p class="niveau-certif">Niveau : Intermédiaire 2</p>
+                                <div class="carte-header">
+                                    <h3><i class="fa-solid fa-certificate"></i> PIX</h3>
+                                    <button class="btn-certif-image">
+                                        <i class="fa fa-image"></i>
+                                    </button>
+                                </div>
+
+                                <p><br>Certification des compétences numériques.</p>
+                                <p class="niveau-certif">Niveau : Indépendant 2</p>
+
                                 <img src="WEBSITE/Projet-img/Certif-Pix.svg" alt="Certificat PIX" class="certif-image">
                             </div>
 
+
                             <div class="carte">
-                                <button class="btn-certif-image">
-                                <i class="fa fa-image"></i>
-                                </button>
-                                <h3><i class="fa-solid fa-language"></i> Evalang (collège)</h3>
-                                <p>Évaluation officielle du niveau d’anglais réalisée en 3ᵉ.</p>
+                                <div class="carte-header">
+                                    <h3><i class="fa-solid fa-language"></i> Evalang (collège)</h3>
+                                    <button class="btn-certif-image">
+                                        <i class="fa fa-image"></i>
+                                    </button>
+                                </div>
+
+                                <p><br>Évaluation officielle du niveau d’anglais réalisée en 3ᵉ.</p>
                                 <p class="niveau-certif">Niveau obtenu : B1</p>
+
                                 <img src="WEBSITE/Projet-img/Certif-Evalang.svg" alt="Certificat Evalang" class="certif-image">
                             </div>
 
@@ -229,6 +245,7 @@
                             <ul>
                                 <li>Gestion de projet</li>
                                 <li>Travail en équipe</li>
+                                <li>Organisation de projet</li>
                             </ul>
                         </div>
 
@@ -248,7 +265,7 @@
         <section id="projets" class="section">
             <div class="contenu-section">
                 <h2>Projets</h2>
-                <p>Quelques exemples de travaux illustrant mes compétences.</p>
+                <p>Voici quelques travaux illustrant mes compétences.</p>
 
                 <div class="grille grille-3">
 
@@ -324,6 +341,18 @@
                         </div>
                     </div>
 
+                    <div class="carte projet">
+                        <img src="WEBSITE/Projet-img/Automate.svg" alt="Automates" class="image-projet">
+                        <h3>Manipulation d'automates finis</h3>
+                        <p>Implémentation complète en Python d'outils pour manipuler des automates : déterminisation, complétion, complémentation, automate produit, minimisation (Moore) et visualisation Graphviz.</p>
+                        <p class="tech">Python, Graphviz</p>
+                        <div class="liens-projet">
+                            <a href="https://github.com/sorakou4/Automates" class="lien-projet" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -334,7 +363,7 @@
                 <p>Pour échanger sur mes projets ou une opportunité, contactez-moi.</p>
 
                 <div class="liens-contact">
-                    <a href="mailto:danielpreasca428@gmail.com?subject=Contact%20depuis%20le%20portfolio" class="bouton primaire">
+                    <a href="mailto:danielpreasca428@gmail.com" class="bouton primaire">
                         <i class="fa-solid fa-envelope"> </i>  Email
                     </a>
 
